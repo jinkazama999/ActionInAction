@@ -9,10 +9,11 @@ jobs:
   MyFirstJob:
     runs-on: ubuntu - latest
     steps:
-      - run: echo "Hello World!"
+      - run: echo ":wave Hello World!"
+      
       - name: Checkout
         uses: actions/checkout@v4.1.7
-      - name: List files in the repository
+        
         run: |
           echo "The repository ${{ github.repository }} contains the following files:"
           tree
